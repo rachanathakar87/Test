@@ -1,3 +1,6 @@
+#Test change try 2
+#Test change try 2.1
+
 # Query Redirector - Chrome extension
 
 ## SYNOPSIS
