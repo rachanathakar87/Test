@@ -112,9 +112,9 @@
       "progressUpdateIntervalMs": 1000
     },
     {
-      "text": "echo \"test\"",
+      "text": "echo \"test two\"",
       "user": "rthakar@qubole.com",
-      "dateUpdated": "Nov 18, 2018 9:29:49 PM",
+      "dateUpdated": "Nov 18, 2018 9:50:31 PM",
       "config": {
         "colWidth": 12.0,
         "graph": {
@@ -133,24 +133,18 @@
         "params": {},
         "forms": {}
       },
-      "paragraphProgress": {
-        "jobs": [],
-        "numCompletedTasks": 0,
-        "numTasks": 0,
-        "truncated": false
-      },
       "version": "v1",
       "jobName": "paragraph_1538503177844_-345257722",
       "id": "20181002-175937_1792405340_q_VK66E7YTR31537911193",
       "result": {
         "code": "ERROR",
         "type": "TEXT",
-        "msg": "\n\n\n\u003cconsole\u003e:1: error: \u0027;\u0027 expected but string literal found.\necho \"test\"\n     ^\n"
+        "msg": "\n\n\n\u003cconsole\u003e:1: error: \u0027;\u0027 expected but string literal found.\necho \"test two\"\n     ^\n"
       },
       "dateCreated": "Oct 2, 2018 5:59:37 PM",
-      "dateSubmitted": "Nov 18, 2018 9:29:49 PM",
-      "dateStarted": "Nov 18, 2018 9:29:57 PM",
-      "dateFinished": "Nov 18, 2018 9:30:48 PM",
+      "dateSubmitted": "Nov 18, 2018 9:50:31 PM",
+      "dateStarted": "Nov 18, 2018 9:50:31 PM",
+      "dateFinished": "Nov 18, 2018 9:50:31 PM",
       "status": "ERROR",
       "progressUpdateIntervalMs": 1000
     },
