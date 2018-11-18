@@ -1,0 +1,186 @@
+{
+  "paragraphs": [
+    {
+      "text": "spark.sql(\"alter table employee change id id int comment \u0027This is a comment using spark 2.2 in notebook\u0027\")",
+      "user": "rthakar@qubole.com",
+      "dateUpdated": "Sep 25, 2018 10:20:15 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "version": "v0",
+      "jobName": "paragraph_1537911194382_343483400",
+      "id": "20180925-213314_39972401_q_VK66E7YTR31537911193",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "\nres2: org.apache.spark.sql.DataFrame \u003d []\n"
+      },
+      "dateCreated": "Sep 25, 2018 9:33:14 PM",
+      "dateSubmitted": "Sep 25, 2018 10:20:15 PM",
+      "dateStarted": "Sep 25, 2018 10:20:15 PM",
+      "dateFinished": "Sep 25, 2018 10:20:17 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 1000
+    },
+    {
+      "text": "spark.sql(\"describe employee\").show(1000,false)",
+      "user": "rthakar@qubole.com",
+      "dateUpdated": "Sep 25, 2018 10:20:21 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "version": "v0",
+      "jobName": "paragraph_1537911216530_955634224",
+      "id": "20180925-213336_160332230_q_VK66E7YTR31537911193",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "+--------+---------+---------------------------------------------+\n|col_name|data_type|comment                                      |\n+--------+---------+---------------------------------------------+\n|id      |int      |This is a comment using spark 2.3 in notebook|\n|name    |string   |null                                         |\n|age     |int      |This is a comment using spark 2.3 in analyze |\n+--------+---------+---------------------------------------------+\n\n"
+      },
+      "dateCreated": "Sep 25, 2018 9:33:36 PM",
+      "dateSubmitted": "Sep 25, 2018 10:20:21 PM",
+      "dateStarted": "Sep 25, 2018 10:20:21 PM",
+      "dateFinished": "Sep 25, 2018 10:20:22 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 1000
+    },
+    {
+      "text": "val gbm \u003d new com.microsoft.ml.spark.LightGBMClassifier()\n    .setLearningRate(0.3)\n    .setNumIterations(100)\n    .setNumLeaves(10)\n\nval g \u003d gbm.fit(input)",
+      "user": "rthakar@qubole.com",
+      "dateUpdated": "Oct 2, 2018 6:05:02 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "version": "v1",
+      "jobName": "paragraph_1537914021098_-171284914",
+      "id": "20180925-222021_80608098_q_VK66E7YTR31537911193",
+      "result": {
+        "code": "ERROR",
+        "type": "TEXT",
+        "msg": "\n\n\n\u003cconsole\u003e:25: error: object ml is not a member of package com.microsoft\n       val gbm \u003d new com.microsoft.ml.spark.LightGBMClassifier()\n                                   ^\n"
+      },
+      "dateCreated": "Sep 25, 2018 10:20:21 PM",
+      "dateSubmitted": "Oct 2, 2018 5:59:37 PM",
+      "dateStarted": "Oct 2, 2018 5:59:41 PM",
+      "dateFinished": "Oct 2, 2018 6:00:27 PM",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 1000
+    },
+    {
+      "text": "echo \"test\"",
+      "user": "rthakar@qubole.com",
+      "dateUpdated": "Nov 18, 2018 9:29:49 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "paragraphProgress": {
+        "jobs": [],
+        "numCompletedTasks": 0,
+        "numTasks": 0,
+        "truncated": false
+      },
+      "version": "v1",
+      "jobName": "paragraph_1538503177844_-345257722",
+      "id": "20181002-175937_1792405340_q_VK66E7YTR31537911193",
+      "result": {
+        "code": "ERROR",
+        "type": "TEXT",
+        "msg": "\n\n\n\u003cconsole\u003e:1: error: \u0027;\u0027 expected but string literal found.\necho \"test\"\n     ^\n"
+      },
+      "dateCreated": "Oct 2, 2018 5:59:37 PM",
+      "dateSubmitted": "Nov 18, 2018 9:29:49 PM",
+      "dateStarted": "Nov 18, 2018 9:29:57 PM",
+      "dateFinished": "Nov 18, 2018 9:30:48 PM",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 1000
+    },
+    {
+      "text": "",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "version": "v0",
+      "jobName": "paragraph_1542576589663_890328420",
+      "id": "20181118-212949_1355584168_q_VK66E7YTR31537911193",
+      "dateCreated": "Nov 18, 2018 9:29:49 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 1000
+    }
+  ],
+  "name": "Column Comment Test",
+  "id": "VK66E7YTR31537911193",
+  "angularObjects": {
+    "2DT2DY436710841537303219117:shared_process": [],
+    "2DTADA6YF710841537303219123:shared_process": [],
+    "2DSKJD2CT710841537303219096:shared_process": [],
+    "2DSDXMJZM710841537303219131:shared_process": []
+  },
+  "config": {
+    "isDashboard": false,
+    "defaultLang": ""
+  },
+  "info": {},
+  "source": "FCN"
+}
